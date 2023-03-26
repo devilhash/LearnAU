@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "493900733280",
+    "project_id": "learnau-d86af",
+    "storage_bucket": "learnau-d86af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493900733280:android:de77a13cba3610637edc05",
+        "android_client_info": {
+          "package_name": "com.app.learnau"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493900733280-9ihcdfjbfeooesn7v9f687a0hk9ac58j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCqV0SRF5iD0k2Z8IeA1Or4usdh4gdUdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493900733280-9ihcdfjbfeooesn7v9f687a0hk9ac58j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

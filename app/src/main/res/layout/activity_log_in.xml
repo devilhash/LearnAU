@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/layout_background"
+    android:gravity="center"
+    tools:context=".RegisterActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/learnau"
+        android:id="@+id/icon2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:background="@drawable/buttonshape"
+        android:layout_margin="15dp"
+        android:hint=" email "
+        android:padding="15dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:background="@drawable/buttonshape"
+        android:layout_margin="15dp"
+        android:hint="password"
+        android:padding="15dp"/>
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:text="LogIn"
+        android:textColor="#D0C8AF"
+        android:layout_margin="20dp"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/logtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="bottom"
+        android:text="not a user? register"
+        android:textColor="#D0C8AF" />
+
+    <TextView
+        android:id="@+id/resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="bottom"
+        android:layout_marginTop="30dp"
+        android:text="Didn't receive mail? click to resend"
+        android:textColor="#D0C8AF" />
+
+
+</LinearLayout>
