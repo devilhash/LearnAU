@@ -4,13 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.app.learnau.R;
-
-public class CB extends AppCompatActivity {
+public class Syllabus extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cb);
+        setContentView(R.layout.activity_syllabus);
     }
 }
