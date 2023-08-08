@@ -3,15 +3,15 @@ package com.app.learnau;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
-import com.app.learnau.CSE.Fragments.AiMaterial;
 import com.app.learnau.CSE.Fragments.AiSyllabus;
 import com.app.learnau.CSE.Fragments.ImpTopics;
-import com.app.learnau.R;
 
 public class AIActivity extends AppCompatActivity {
     private Button syllabus;
@@ -30,9 +30,16 @@ public class AIActivity extends AppCompatActivity {
         topics = findViewById(R.id.ai_important_topics);
         fragment=findViewById(R.id.fragment_view);
 
+
+
+        Intent intent = getIntent();
+        String subjectName =  intent.getStringExtra("Subject");
+
+
         syllabus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 getSupportFragmentManager().beginTransaction().add(R.id.fragment_view,new AiSyllabus()).commit();
                  syllabus.setVisibility(View.INVISIBLE);
                  material.setVisibility(View.INVISIBLE);
@@ -44,18 +51,17 @@ public class AIActivity extends AppCompatActivity {
         material.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getSupportFragmentManager().beginTransaction().add(R.id.fragment_view,new AiMaterial()).commit();
-                syllabus.setVisibility(View.INVISIBLE);
-                material.setVisibility(View.INVISIBLE);
-                topics.setVisibility(View.INVISIBLE);
-                fragment.setVisibility(View.VISIBLE);
+                Intent intent = new Intent(AIActivity.this, Materials.class);
+                intent.putExtra("subject",subjectName);
+                startActivity(intent);
 
             }
         });
         topics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getSupportFragmentManager().beginTransaction().add(R.id.fragment_view,new ImpTopics()).commit();
+
+                getSupportFragmentManager().beginTransaction().add(R.id.fragment_view,new ImpTopics( )).commit();
                 syllabus.setVisibility(View.INVISIBLE);
                 material.setVisibility(View.INVISIBLE);
                 topics.setVisibility(View.INVISIBLE);

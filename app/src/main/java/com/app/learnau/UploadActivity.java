@@ -52,7 +52,14 @@ public class UploadActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload);
-        databaseReference = FirebaseDatabase.getInstance().getReference("My_Documents").child("Ai syllabus");
+        Intent actIntent = getIntent();
+        String subjectName = actIntent.getStringExtra("subject");
+        Toast.makeText(this, subjectName, Toast.LENGTH_SHORT).show();
+//
+
+
+        databaseReference = FirebaseDatabase.getInstance().getReference("My_Documents").child(subjectName).child("materials");
+
 
 
 

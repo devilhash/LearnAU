@@ -4,13 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.app.learnau.R;
-
-public class Python extends AppCompatActivity {
+public class UploadTopics extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_python);
+        setContentView(R.layout.activity_upload_topics);
     }
 }
